@@ -1,7 +1,7 @@
 # WeatherApp ☀️☁️🌦️
 - # How to access it? 🔗 www.linktotheproject.com 🔗
 ## I am creating this project to put in practice my Angular knowledge.
-<img src="../angular-weather-app/docs/angular_image.png"></img>
+<img src="docs/angular_image.png"></img>
 ## I will explore some fundamentals of this framework, such as:
 - ##### One way data binding
 - ##### Two way data binding
