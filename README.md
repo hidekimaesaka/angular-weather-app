@@ -1,5 +1,5 @@
 # WeatherApp ☀️☁️🌦️
-- # How to access it? 🔗 angular-weather-app-smoky.vercel.app/ 🔗
+- # How to access it? 🔗 https://angular-weather-app-smoky.vercel.app/ 🔗
 ## I am creating this project to put in practice my Angular knowledge.
 <img src="docs/angular_image.png"></img>
 ## I will explore some fundamentals of this framework, such as:
