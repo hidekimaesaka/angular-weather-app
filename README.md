@@ -19,6 +19,15 @@
 <img src="docs/home_page.png"></img>
 _home page_
 
+<img src="docs/sunny_page.png"></img>
+_weather [sunny]_
+
+<img src="docs/rainy_page.png"></img>
+_weather [rainy]_
+
+<img src="docs/cold_page.png"></img>
+_weather [cold]_
+
 ## Architecture
 - to fill
 ## Dependencies
