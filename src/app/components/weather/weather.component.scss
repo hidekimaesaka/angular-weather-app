@@ -1,0 +1,230 @@
+body {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.loc-input-div {
+    margin-left: -80px;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loc-input {
+    background-color: transparent;
+    border: 2px thin rgba(0, 0, 0, 0.1);
+    padding: 15px 50px 15px 30px;
+    border-radius: 20px;
+    width: 100%!important;
+    text-align: center;
+    height: 15px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.loc-input-button {
+    width: 20px!important;
+    height: 22px;
+    background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+    cursor: pointer!important;
+    border: none;
+    transform: translateY(-50%);
+    padding: 0;
+    position: relative;
+    top: -25px;
+    left: 290px;
+}
+
+.loc-input:focus {
+    outline: none;
+}
+
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.city-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.header-images {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-1 {
+    width: 200px;
+    height: 200px;
+}
+
+.img-2 {
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+}
+
+.temperature {
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.weather-information {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.weather-information p {
+    font-size: medium;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#weather-container {
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.humidity-icon img {
+    width: 50px;
+}
+
+.wind-icon img {
+    width: 50px
+}
+
+.max-temp-icon img {
+    width: 50px;
+}
+
+.min-temp-icon img {
+    width: 50px;
+}
+
+.humidity-icon {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+.wind-icon {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+.max-temp-icon {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+.min-temp-icon {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+
+.humidity-container {
+    color:  white;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wind-container {
+    color:  white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.max-temp-container {
+    color:  white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.min-temp-container {
+    color:  white;
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid white;
+    align-items: center;
+    justify-content: end;
+}
+
+.humidity-info {
+    margin-bottom: 15px;
+}
+
+.wind-info {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.max-temp-info {
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.min-temp-info {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+// <div class="weather-information">
+//         <div class="humidity-container">
+//             <div class="humidity-icon">
+//                 <img src="../../../assets/humidity-ico.png" alt="" class="humidity-img">
+//                 <p class="humidity-text">humidity</p>
+//             </div>
+//             <p class="humidity-info">87%</p>
+//         </div>
+//         <div class="wind-container">
+//             <div class="wind-icon">
+//                 <img src="../../../assets/wind-ico.png" alt="" class="wind-img">
+//                 <p class="wind-text">wind</p>
+//             </div>
+//             <p class="windo-info">11 km/h</p>
+//         </div>
+//         <div class="max-temp-container">
+//             <div class="max-temp-icon">
+//                 <img src="../../../assets/temp-ico.png" alt="" class="max-temp-img">
+//                 <p class="max-temp-text">max-temp</p>
+//             </div>
+//             <p class="max-temp-info">23 ºC</p>
+//         </div>
+//         <div class="min-temp-container">
+//             <div class="min-temp-icon">
+//                 <img src="../../../assets/temp-ico.png" alt="" class="min-temp-img">
+//                 <p class="min-temp-text">min-temp</p>
+//             </div>
+//             <p class="min-temp-info">13 ºC</p>
+//         </div>
+//     </div>
