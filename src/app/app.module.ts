@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { WeatherComponent } from './components/weather/weather.component';
 
 import {HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {HttpClientModule} from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

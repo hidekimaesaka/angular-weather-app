@@ -1,7 +1,8 @@
-<body>
+<!-- <body [ngStyle]="weatherData.main.temp<=18?{'background-color':'#BECED4'} : {'background-color': '#66A3BD'}"> -->
+    <body [ngStyle]="rain?{'background-color':'#647982'}: weatherData.main.temp<=18?{'background-color':'#BECED4'} : {'background-color': '#66A3BD'}">
     <div class="loc-input-div">
-        <form action="" class="loc-input-form">
-            <input type="text" class="loc-input" placeholder="Type a location">
+        <form #form="ngForm" (submit)="onSubmit()" class="loc-input-form">
+            <input name="cityInput" [(ngModel)]="initialCityName" type="text" class="loc-input" placeholder="Type a location">
             <div>
                 <button type="submit" class="loc-input-button"></button>
             </div>
@@ -10,8 +11,11 @@
     <div class="header">
         <h1 class="city-name">{{weatherData.name}}</h1>
         <div class="header-images">
-            <img src="../../../assets/sun.png" alt="" class="img-1">
-            <img src="../../../assets/duck.png" alt="" class="img-2">
+            <img *ngIf="weatherData.main.temp>=18 && !rain" src="../../../assets/sun.png" alt="" class="img-1">
+            <img *ngIf="weatherData.main.temp>=18 && !rain" src="../../../assets/duck.png" alt="" class="img-2">
+            <img *ngIf="rain" src="../../../assets/rain.png" alt="" class="img-1">
+            <img *ngIf="rain" src="../../../assets/kuromi.png" alt="" class="img-2">
+            <img *ngIf="weatherData.main.temp<=18 && !rain" [ngStyle]="{'height':'200px'}" src="../../../assets/hellokitty.png" alt="" class="img-2">
         </div>
         <h1 class="temperature">{{weatherData.main.temp}} ºC</h1>
     </div>
