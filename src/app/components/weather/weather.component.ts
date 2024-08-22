@@ -12,6 +12,7 @@ export class WeatherComponent implements OnInit {
 
   initialCityName: string = "São Paulo";
   weatherData!: WeatherData;
+  rain: boolean = false;
 
   ngOnInit(): void {
     this.getWeather(this.initialCityName);
@@ -20,12 +21,19 @@ export class WeatherComponent implements OnInit {
   getWeather(cityName: string): void {
     this.weatherService.getWeatherData(cityName).subscribe({
       next: (response) => {
+        response.rain? this.rain = true: this.rain = false;
+        console.log(this.rain);
         response && (this.weatherData = response);
-        console.log(this.weatherData);
       },
       error: (error) => {
         console.log(error);
       },
     });
   }
+
+  onSubmit(): void {
+    this.getWeather(this.initialCityName);
+    this.initialCityName = "";
+  }
+
 }
